@@ -1,4 +1,4 @@
-import { Bike, MapPin, MessageCircle, PackageCheck } from "lucide-react"
+import { MapPin, MessageCircle, Motorbike, PackageCheck } from "lucide-react"
 import { site } from "../data/site"
 import WhatsAppButton from "./WhatsAppButton"
 import WhatsAppIcon from "./WhatsAppIcon"
@@ -15,7 +15,7 @@ const steps = [
     text: "A gente confere disponibilidade, passa o valor e você escolhe a forma de pagamento.",
   },
   {
-    icon: Bike,
+    icon: Motorbike,
     title: "3. Receba em casa",
     text: "Nosso entregador sai com seu pedido. Pediu, chegou!",
   },
