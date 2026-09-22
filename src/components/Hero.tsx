@@ -3,7 +3,7 @@ import { mapsLink, site } from "../data/site"
 import WhatsAppButton from "./WhatsAppButton"
 
 const highlights = [
-  { icon: ShieldCheck, label: "Genéricos com até 60% off" },
+  { icon: ShieldCheck, label: "Genéricos com preços especiais" },
   { icon: Clock, label: "Aberto todos os dias" },
   { icon: MapPin, label: `Entrega em ${site.city}` },
 ]
