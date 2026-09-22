@@ -27,7 +27,7 @@ npm run lint
 | Delivery | Como pedir em 3 passos + aviso de área de entrega |
 | Produtos | Categorias atendidas |
 | Horários | Grade de funcionamento com selo "aberto agora" em tempo real |
-| Contato | Endereço, telefone, redes e mapa do Google incorporado |
+| Contato | Endereço, telefone, redes e mapa com o marcador da loja |
 
 ## Onde editar as informações
 
@@ -40,6 +40,11 @@ usando o fuso `America/Belem`, a partir da mesma grade de horários.
 
 ### Pendências de conteúdo
 
+- **Coordenadas da loja**: `site.address.coords` está provisoriamente no centro de
+  Benevides, não na porta da farmácia. Para corrigir, abra o Google Maps, clique
+  com o botão direito em cima da loja, clique nas coordenadas no topo do menu
+  (isso as copia) e cole os dois números ali.
+
 - **Domínio**: a URL canônica e as tags Open Graph em `index.html` usam um domínio
   de exemplo.
 
@@ -48,6 +53,18 @@ usando o fuso `America/Belem`, a partir da mesma grade de horários.
 O [`netlify.toml`](netlify.toml) já traz a configuração: build com `npm run build`,
 publicação da pasta `dist` e Node 22. Basta conectar o repositório na Netlify —
 não é preciso preencher nada manualmente.
+
+## Mapa
+
+O mapa usa [Leaflet](https://leafletjs.com) com tiles do OpenStreetMap servidos
+pela CARTO — sem chave de API e sem conta de faturamento. O marcador é um SVG
+inline em [`StoreMap.tsx`](src/components/StoreMap.tsx), então cor, ícone e
+tamanho são editáveis direto no código.
+
+O Leaflet pesa mais que o resto do site somado, então
+[`LazyStoreMap.tsx`](src/components/LazyStoreMap.tsx) só o baixa quando o
+visitante chega perto do mapa. Ele sai num chunk separado — o carregamento
+inicial da página não muda.
 
 ## Imagens
 

@@ -13,6 +13,15 @@ export const site = {
     city: "Benevides",
     state: "PA",
     zip: "68795-000",
+    /**
+     * Onde o marcador da loja é fixado no mapa. PROVISÓRIO: aponta para o
+     * centro de Benevides, não para a porta da farmácia.
+     *
+     * Para corrigir: abra o Google Maps, clique com o botão direito em cima da
+     * loja, clique nas coordenadas que aparecem no topo do menu (isso as copia)
+     * e cole os dois números aqui.
+     */
+    coords: { lat: -1.3619, lng: -48.2447 },
   },
   instagram: {
     handle: "@benevidesfarmaciaprecobaixo",
@@ -40,8 +49,6 @@ const mapsQuery = encodeURIComponent(
  */
 export const mapsLink = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`
 
-/** Keyless embed used by the iframe on the contact section. */
-export const mapsEmbedLink = `https://www.google.com/maps?q=${mapsQuery}&hl=pt-BR&z=17&output=embed`
 
 export const defaultMessage =
   "Olá! Vim pelo site da Farmácia Preço Baixo Benevides e gostaria de fazer um pedido."

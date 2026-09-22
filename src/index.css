@@ -49,3 +49,31 @@
     transition-duration: 0.001ms !important;
   }
 }
+
+/* O divIcon do marcador vem com fundo e borda próprios do Leaflet. */
+.store-marker {
+  background: none;
+  border: 0;
+}
+
+/* O mapa fica dentro de um card arredondado; os controles seguem a marca. */
+.leaflet-container {
+  font: inherit;
+  background: var(--color-brand-50);
+}
+
+.leaflet-container .leaflet-bar a {
+  color: var(--color-brand-700);
+}
+
+.leaflet-popup-content {
+  margin: 0.85rem 1rem;
+  line-height: 1.5;
+}
+
+/* O CSS do Leaflet vem no chunk do mapa, carregado depois deste arquivo, então
+   o seletor precisa vencer `.leaflet-container a` por especificidade. */
+.leaflet-container .leaflet-popup-content a {
+  color: var(--color-brand-600);
+  font-weight: 600;
+}

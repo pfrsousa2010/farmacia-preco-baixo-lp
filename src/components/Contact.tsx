@@ -1,6 +1,7 @@
 import { Clock, MapPin, Navigation } from "lucide-react"
 import InstagramIcon from "./InstagramIcon"
-import { fullAddress, mapsEmbedLink, mapsLink, site } from "../data/site"
+import LazyStoreMap from "./LazyStoreMap"
+import { fullAddress, mapsLink, site } from "../data/site"
 import WhatsAppButton from "./WhatsAppButton"
 import WhatsAppIcon from "./WhatsAppIcon"
 
@@ -86,14 +87,7 @@ export default function Contact() {
 
       <div className="container-page mt-14">
         <div className="overflow-hidden rounded-3xl shadow-xl shadow-brand-900/10 ring-1 ring-brand-100">
-          <iframe
-            src={mapsEmbedLink}
-            title={`Mapa com a localização da ${site.name} em ${site.city}`}
-            className="block h-[320px] w-full border-0 sm:h-[420px]"
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-            allowFullScreen
-          />
+          <LazyStoreMap />
           <div className="flex flex-col items-start gap-4 bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="flex items-start gap-3 text-ink/70">
               <MapPin className="mt-0.5 size-5 shrink-0 text-brand-600" aria-hidden="true" />
