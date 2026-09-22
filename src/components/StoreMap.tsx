@@ -71,7 +71,7 @@ export default function StoreMap() {
     marker
       .bindPopup(
         `<strong>${site.name}</strong><br>${site.address.street}<br>` +
-          `<a href="${mapsLink}" target="_blank" rel="noopener noreferrer">Abrir no Google Maps</a>`,
+          `<a href="${mapsLink}" target="_blank" rel="noopener noreferrer">Como chegar</a>`,
       )
       .openPopup()
 

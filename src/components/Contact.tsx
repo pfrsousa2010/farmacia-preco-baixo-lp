@@ -100,7 +100,7 @@ export default function Contact() {
               className="inline-flex shrink-0 items-center justify-center gap-2.5 rounded-full bg-brand-600 px-7 py-3.5 font-display font-bold text-white shadow-lg shadow-brand-600/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700"
             >
               <Navigation className="size-5" aria-hidden="true" />
-              Abrir no Google Maps
+              Como chegar
             </a>
           </div>
         </div>
