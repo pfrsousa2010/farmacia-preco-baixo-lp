@@ -14,14 +14,13 @@ export const site = {
     state: "PA",
     zip: "68795-000",
     /**
-     * Onde o marcador da loja é fixado no mapa. PROVISÓRIO: aponta para o
-     * centro de Benevides, não para a porta da farmácia.
+     * Onde o marcador da loja é fixado no mapa.
      *
-     * Para corrigir: abra o Google Maps, clique com o botão direito em cima da
+     * Para atualizar: abra o Google Maps, clique com o botão direito em cima da
      * loja, clique nas coordenadas que aparecem no topo do menu (isso as copia)
-     * e cole os dois números aqui.
+     * e cole os dois números aqui — trocando a vírgula decimal por ponto.
      */
-    coords: { lat: -1.3619, lng: -48.2447 },
+    coords: { lat: -1.3614343, lng: -48.243876 },
   },
   instagram: {
     handle: "@benevidesfarmaciaprecobaixo",

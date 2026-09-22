@@ -40,10 +40,6 @@ usando o fuso `America/Belem`, a partir da mesma grade de horários.
 
 ### Pendências de conteúdo
 
-- **Coordenadas da loja**: `site.address.coords` está provisoriamente no centro de
-  Benevides, não na porta da farmácia. Para corrigir, abra o Google Maps, clique
-  com o botão direito em cima da loja, clique nas coordenadas no topo do menu
-  (isso as copia) e cole os dois números ali.
 
 - **Domínio**: a URL canônica e as tags Open Graph em `index.html` usam um domínio
   de exemplo.
