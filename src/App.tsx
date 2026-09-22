@@ -1,6 +1,7 @@
 import Benefits from "./components/Benefits"
 import Contact from "./components/Contact"
 import Delivery from "./components/Delivery"
+import Faq from "./components/Faq"
 import FloatingWhatsApp from "./components/FloatingWhatsApp"
 import Footer from "./components/Footer"
 import Header from "./components/Header"
@@ -21,6 +22,7 @@ export default function App() {
         <Products />
         <Hours />
         <Contact />
+        <Faq />
       </main>
       <Footer />
       <FloatingWhatsApp />

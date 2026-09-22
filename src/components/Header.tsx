@@ -10,6 +10,7 @@ const links = [
   { href: "#produtos", label: "Produtos" },
   { href: "#horarios", label: "Horários" },
   { href: "#contato", label: "Contato" },
+  { href: "#faq", label: "Dúvidas" },
 ]
 
 export default function Header() {

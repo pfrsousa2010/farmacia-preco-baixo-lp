@@ -28,6 +28,8 @@ npm run lint
 | Produtos | Categorias atendidas |
 | Horários | Grade de funcionamento com selo "aberto agora" em tempo real |
 | Contato | Endereço, telefone, redes e mapa com o marcador da loja |
+| Pagamento | Pix, débito, crédito parcelado e dinheiro |
+| Dúvidas frequentes | Acordeão com as perguntas mais comuns |
 
 ## Onde editar as informações
 
@@ -43,6 +45,14 @@ usando o fuso `America/Belem`, a partir da mesma grade de horários.
 
 - **Domínio**: a URL canônica e as tags Open Graph em `index.html` usam um domínio
   de exemplo.
+
+## Dúvidas frequentes (FAQ)
+
+O conteúdo vive em duas cópias que precisam ser mantidas em sincronia manual:
+[`src/components/Faq.tsx`](src/components/Faq.tsx) (o que aparece na tela) e o
+bloco `FAQPage` em [`index.html`](index.html) (dados estruturados, para o
+Google poder mostrar as perguntas direto na busca). Ao editar uma pergunta,
+edite a outra também.
 
 ## Deploy (Netlify)
 
