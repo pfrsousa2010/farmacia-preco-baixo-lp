@@ -57,6 +57,17 @@ export default function Footer() {
             Feito com <Heart className="size-3.5 fill-current text-brand-400" aria-hidden="true" />{" "}
             para cuidar de você
           </p>
+          <p className="mt-2">
+            Desenvolvido por{" "}
+            <a
+              href="https://microfocus.dev.br/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="font-medium text-white/70 underline decoration-white/30 underline-offset-2 transition-colors hover:text-white hover:decoration-white/60"
+            >
+              Microfocus
+            </a>
+          </p>
         </div>
       </div>
     </footer>
