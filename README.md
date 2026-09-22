@@ -52,8 +52,10 @@ não é preciso preencher nada manualmente.
 
 ## Mapa
 
-O mapa usa [Leaflet](https://leafletjs.com) com tiles do OpenStreetMap servidos
-pela CARTO — sem chave de API e sem conta de faturamento. O marcador é um SVG
+O mapa usa [Leaflet](https://leafletjs.com) com os tiles padrão do
+OpenStreetMap — sem chave de API e sem conta. O provedor dos tiles fica na
+constante `TILES`, no topo de `StoreMap.tsx`, para ser trocado num só lugar.
+O marcador é um SVG
 inline em [`StoreMap.tsx`](src/components/StoreMap.tsx), então cor, ícone e
 tamanho são editáveis direto no código.
 

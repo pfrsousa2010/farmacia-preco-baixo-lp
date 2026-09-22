@@ -23,6 +23,18 @@ const markerSvg = `
   </g>
 </svg>`
 
+/**
+ * Provedor dos tiles. O OpenStreetMap serve sem chave de API e sem conta — a
+ * CARTO passou a exigir chave e estampava "API KEY REQUIRED" sobre o mapa.
+ * Para trocar de provedor depois, basta mexer aqui.
+ */
+const TILES = {
+  url: "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+  attribution:
+    '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>',
+  maxZoom: 19,
+}
+
 export default function StoreMap() {
   const container = useRef<HTMLDivElement>(null)
 
@@ -38,10 +50,9 @@ export default function StoreMap() {
       attributionControl: true,
     })
 
-    L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}{r}.png", {
-      attribution:
-        '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/attributions">CARTO</a>',
-      maxZoom: 20,
+    L.tileLayer(TILES.url, {
+      attribution: TILES.attribution,
+      maxZoom: TILES.maxZoom,
     }).addTo(map)
 
     const marker = L.marker([lat, lng], {
