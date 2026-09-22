@@ -86,7 +86,7 @@ export default function Contact() {
       </div>
 
       <div className="container-page mt-14">
-        <div className="overflow-hidden rounded-3xl shadow-xl shadow-brand-900/10 ring-1 ring-brand-100">
+        <div className="isolate overflow-hidden rounded-3xl shadow-xl shadow-brand-900/10 ring-1 ring-brand-100">
           <LazyStoreMap />
           <div className="flex flex-col items-start gap-4 bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
             <p className="flex items-start gap-3 text-ink/70">
