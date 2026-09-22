@@ -47,6 +47,12 @@ usando o fuso `America/Belem`, a partir da mesma grade de horários.
 - **Domínio**: a URL canônica e as tags Open Graph em `index.html` usam um domínio
   de exemplo.
 
+## Deploy (Netlify)
+
+O [`netlify.toml`](netlify.toml) já traz a configuração: build com `npm run build`,
+publicação da pasta `dist` e Node 22. Basta conectar o repositório na Netlify —
+não é preciso preencher nada manualmente.
+
 ## Imagens
 
 Ficam em `public/images/`: `logo.png` (marca) e `fachada.png` (foto da loja).
