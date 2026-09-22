@@ -78,13 +78,13 @@ export default function Contact() {
               Ver no mapa
             </a>
             <a
-              href={site.instagram}
+              href={site.instagram.url}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="Instagram"
-              className="grid size-14 place-items-center rounded-full bg-white text-brand-600 ring-1 ring-brand-200 transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-600 hover:text-white"
+              className="inline-flex items-center justify-center gap-2.5 rounded-full bg-white px-6 py-3.5 font-display font-bold text-brand-700 ring-1 ring-brand-200 transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-600 hover:text-white hover:ring-brand-600"
             >
-              <InstagramIcon className="size-6" />
+              <InstagramIcon className="size-5" />
+              Instagram
             </a>
           </div>
         </div>

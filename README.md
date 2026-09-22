@@ -43,7 +43,6 @@ usando o fuso `America/Belem`, a partir da mesma grade de horários.
 - **Endereço completo**: hoje aparece apenas "Benevides — PA". O link do mapa usa
   uma busca pelo nome da farmácia — vale trocar por rua, número e bairro em
   `site.mapsQuery` e no bloco de endereço.
-- **Instagram**: `site.instagram` está com um link genérico, aguardando o perfil real.
 - **Domínio**: a URL canônica e as tags Open Graph em `index.html` usam um domínio
   de exemplo.
 

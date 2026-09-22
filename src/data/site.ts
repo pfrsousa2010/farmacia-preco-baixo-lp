@@ -9,7 +9,10 @@ export const site = {
     e164: "5591988423220",
   },
   mapsQuery: "Farmácia Preço Baixo, Benevides - PA",
-  instagram: "https://www.instagram.com/",
+  instagram: {
+    handle: "@benevidesfarmaciaprecobaixo",
+    url: "https://www.instagram.com/benevidesfarmaciaprecobaixo",
+  },
   hours: [
     { days: "Segunda a Sábado", open: "07:30", close: "21:00" },
     { days: "Domingo", open: "08:00", close: "20:00" },

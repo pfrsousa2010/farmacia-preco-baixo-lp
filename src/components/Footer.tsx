@@ -1,5 +1,7 @@
-import { Heart, MapPin, MessageCircle } from "lucide-react"
+import { Heart, MapPin } from "lucide-react"
 import { site, whatsappLink } from "../data/site"
+import InstagramIcon from "./InstagramIcon"
+import WhatsAppIcon from "./WhatsAppIcon"
 
 export default function Footer() {
   return (
@@ -23,8 +25,17 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="inline-flex items-center gap-2 transition-colors hover:text-white"
             >
-              <MessageCircle className="size-4" aria-hidden="true" />
+              <WhatsAppIcon className="size-4" />
               {site.whatsapp.display}
+            </a>
+            <a
+              href={site.instagram.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
+              <InstagramIcon className="size-4" />
+              {site.instagram.handle}
             </a>
             <span className="inline-flex items-center gap-2">
               <MapPin className="size-4" aria-hidden="true" />
