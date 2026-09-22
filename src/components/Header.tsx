@@ -32,7 +32,7 @@ export default function Header() {
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-all duration-300 ${
-        scrolled ? "bg-white/95 shadow-md backdrop-blur-md" : "bg-transparent"
+        scrolled || open ? "bg-white/95 shadow-md backdrop-blur-md" : "bg-transparent"
       }`}
     >
       <div className="container-page flex h-20 items-center justify-between gap-4">
@@ -41,7 +41,7 @@ export default function Header() {
             src="/images/logo.png"
             alt={`${site.name} ${site.city}`}
             className={`h-11 w-auto transition-all duration-300 md:h-12 ${
-              scrolled ? "" : "drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)]"
+              scrolled || open ? "" : "drop-shadow-[0_2px_10px_rgba(0,0,0,0.25)]"
             }`}
           />
         </a>
@@ -61,13 +61,15 @@ export default function Header() {
         </nav>
 
         <div className="flex items-center gap-2">
-          <WhatsAppButton
-            variant={scrolled ? "solid" : "light"}
-            className="hidden px-5 py-2.5 text-sm sm:inline-flex"
-          >
-            <Phone className="size-4" aria-hidden="true" />
-            Pedir agora
-          </WhatsAppButton>
+          <div className="hidden sm:block">
+            <WhatsAppButton
+              variant={scrolled ? "solid" : "light"}
+              className="px-5 py-2.5 text-sm whitespace-nowrap"
+            >
+              <Phone className="size-4" aria-hidden="true" />
+              Pedir agora
+            </WhatsAppButton>
+          </div>
 
           <button
             type="button"

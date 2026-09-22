@@ -2,6 +2,7 @@ import { Clock, MapPin, MessageCircle } from "lucide-react"
 import InstagramIcon from "./InstagramIcon"
 import { mapsLink, site } from "../data/site"
 import WhatsAppButton from "./WhatsAppButton"
+import WhatsAppIcon from "./WhatsAppIcon"
 
 export default function Contact() {
   return (
@@ -64,7 +65,7 @@ export default function Contact() {
 
           <div className="mt-9 flex flex-wrap gap-3">
             <WhatsAppButton>
-              <MessageCircle className="size-5" aria-hidden="true" />
+              <WhatsAppIcon className="size-5" />
               Falar no WhatsApp
             </WhatsAppButton>
             <a

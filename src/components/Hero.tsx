@@ -24,14 +24,14 @@ export default function Hero() {
         aria-hidden="true"
       />
 
-      <div className="container-page grid items-center gap-12 py-16 md:py-24 lg:grid-cols-[1.05fr_1fr] lg:gap-16">
+      <div className="container-page grid items-center gap-12 py-16 md:py-24 xl:grid-cols-[1.05fr_1fr] xl:gap-16">
         <div className="text-white">
           <span className="inline-flex items-center gap-2 rounded-full bg-white/15 px-4 py-1.5 font-display text-xs font-semibold tracking-wide uppercase backdrop-blur">
             <span className="size-2 animate-pulse rounded-full bg-green-400" />
             {site.city} — {site.state}
           </span>
 
-          <h1 className="mt-6 font-display text-4xl leading-[1.08] font-extrabold tracking-tight sm:text-5xl lg:text-6xl">
+          <h1 className="mt-6 font-display text-4xl leading-[1.08] font-extrabold tracking-tight sm:text-5xl xl:text-6xl">
             Remédio barato
             <br />
             <span className="text-yellow-300">de verdade.</span>
@@ -68,7 +68,7 @@ export default function Hero() {
           </ul>
         </div>
 
-        <div className="relative">
+        <div className="relative mb-8 xl:mb-0">
           <div className="animate-float overflow-hidden rounded-3xl border-4 border-white/20 shadow-2xl shadow-black/40">
             <img
               src="/images/fachada.png"
@@ -79,8 +79,8 @@ export default function Hero() {
             />
           </div>
 
-          <div className="absolute -bottom-6 -left-4 hidden rounded-2xl bg-white px-5 py-4 shadow-xl shadow-black/20 sm:block">
-            <p className="font-display text-2xl font-extrabold text-brand-600">
+          <div className="absolute -bottom-7 -left-3 hidden rounded-2xl bg-white px-5 py-3.5 shadow-xl shadow-black/25 sm:block">
+            <p className="font-display text-xl font-extrabold text-brand-600 sm:text-2xl">
               {site.whatsapp.display}
             </p>
             <p className="text-xs font-medium tracking-wide text-ink/60 uppercase">

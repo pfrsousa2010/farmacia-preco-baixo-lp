@@ -1,6 +1,7 @@
 import { Bike, MapPin, MessageCircle, PackageCheck } from "lucide-react"
 import { site } from "../data/site"
 import WhatsAppButton from "./WhatsAppButton"
+import WhatsAppIcon from "./WhatsAppIcon"
 
 const steps = [
   {
@@ -59,7 +60,7 @@ export default function Delivery() {
                 className="px-8 py-4 text-lg"
                 message={`Olá! Quero fazer um pedido com entrega em ${site.city}.`}
               >
-                <MessageCircle className="size-5" aria-hidden="true" />
+                <WhatsAppIcon className="size-5" />
                 {site.whatsapp.display}
               </WhatsAppButton>
             </div>
