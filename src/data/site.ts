@@ -20,7 +20,7 @@ export const site = {
      * loja, clique nas coordenadas que aparecem no topo do menu (isso as copia)
      * e cole os dois números aqui — trocando a vírgula decimal por ponto.
      */
-    coords: { lat: -1.3614343, lng: -48.243876 },
+    coords: { lat: -1.3615874, lng: -48.2437868 },
   },
   instagram: {
     handle: "@benevidesfarmaciaprecobaixo",
