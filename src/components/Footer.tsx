@@ -1,5 +1,5 @@
 import { Heart, MapPin } from "lucide-react"
-import { site, whatsappLink } from "../data/site"
+import { mapsLink, site, whatsappLink } from "../data/site"
 import InstagramIcon from "./InstagramIcon"
 import WhatsAppIcon from "./WhatsAppIcon"
 
@@ -37,10 +37,15 @@ export default function Footer() {
               <InstagramIcon className="size-4" />
               {site.instagram.handle}
             </a>
-            <span className="inline-flex items-center gap-2">
+            <a
+              href={mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 transition-colors hover:text-white"
+            >
               <MapPin className="size-4" aria-hidden="true" />
-              {site.city} — {site.state}
-            </span>
+              {site.address.street}
+            </a>
           </div>
         </div>
 

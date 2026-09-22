@@ -27,7 +27,7 @@ npm run lint
 | Delivery | Como pedir em 3 passos + aviso de área de entrega |
 | Produtos | Categorias atendidas |
 | Horários | Grade de funcionamento com selo "aberto agora" em tempo real |
-| Contato | Endereço, telefone, mapa e redes |
+| Contato | Endereço, telefone, redes e mapa do Google incorporado |
 
 ## Onde editar as informações
 
@@ -40,9 +40,6 @@ usando o fuso `America/Belem`, a partir da mesma grade de horários.
 
 ### Pendências de conteúdo
 
-- **Endereço completo**: hoje aparece apenas "Benevides — PA". O link do mapa usa
-  uma busca pelo nome da farmácia — vale trocar por rua, número e bairro em
-  `site.mapsQuery` e no bloco de endereço.
 - **Domínio**: a URL canônica e as tags Open Graph em `index.html` usam um domínio
   de exemplo.
 

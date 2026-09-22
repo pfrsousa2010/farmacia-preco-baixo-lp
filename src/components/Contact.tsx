@@ -1,6 +1,6 @@
-import { Clock, MapPin, MessageCircle } from "lucide-react"
+import { Clock, MapPin, Navigation } from "lucide-react"
 import InstagramIcon from "./InstagramIcon"
-import { mapsLink, site } from "../data/site"
+import { fullAddress, mapsEmbedLink, mapsLink, site } from "../data/site"
 import WhatsAppButton from "./WhatsAppButton"
 import WhatsAppIcon from "./WhatsAppIcon"
 
@@ -33,7 +33,7 @@ export default function Contact() {
 
           <dl className="mt-8 space-y-5">
             <div className="flex gap-4">
-              <MessageCircle className="mt-0.5 size-6 shrink-0 text-brand-600" aria-hidden="true" />
+              <WhatsAppIcon className="mt-0.5 size-6 shrink-0 text-brand-600" />
               <div>
                 <dt className="font-display text-sm font-bold text-ink">WhatsApp</dt>
                 <dd className="text-ink/60">{site.whatsapp.display}</dd>
@@ -44,7 +44,10 @@ export default function Contact() {
               <div>
                 <dt className="font-display text-sm font-bold text-ink">Endereço</dt>
                 <dd className="text-ink/60">
-                  {site.city} — {site.state}
+                  <span className="block">{site.address.street}</span>
+                  <span className="block">
+                    {site.address.city} — {site.address.state}, {site.address.zip}
+                  </span>
                 </dd>
               </div>
             </div>
@@ -69,15 +72,6 @@ export default function Contact() {
               Falar no WhatsApp
             </WhatsAppButton>
             <a
-              href={mapsLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2.5 rounded-full border-2 border-brand-600 px-7 py-3.5 font-display font-bold text-brand-700 transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-600 hover:text-white"
-            >
-              <MapPin className="size-5" aria-hidden="true" />
-              Ver no mapa
-            </a>
-            <a
               href={site.instagram.url}
               target="_blank"
               rel="noopener noreferrer"
@@ -85,6 +79,34 @@ export default function Contact() {
             >
               <InstagramIcon className="size-5" />
               Instagram
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-page mt-14">
+        <div className="overflow-hidden rounded-3xl shadow-xl shadow-brand-900/10 ring-1 ring-brand-100">
+          <iframe
+            src={mapsEmbedLink}
+            title={`Mapa com a localização da ${site.name} em ${site.city}`}
+            className="block h-[320px] w-full border-0 sm:h-[420px]"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            allowFullScreen
+          />
+          <div className="flex flex-col items-start gap-4 bg-white p-6 sm:flex-row sm:items-center sm:justify-between">
+            <p className="flex items-start gap-3 text-ink/70">
+              <MapPin className="mt-0.5 size-5 shrink-0 text-brand-600" aria-hidden="true" />
+              <span>{fullAddress}</span>
+            </p>
+            <a
+              href={mapsLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex shrink-0 items-center justify-center gap-2.5 rounded-full bg-brand-600 px-7 py-3.5 font-display font-bold text-white shadow-lg shadow-brand-600/30 transition-all duration-200 hover:-translate-y-0.5 hover:bg-brand-700"
+            >
+              <Navigation className="size-5" aria-hidden="true" />
+              Abrir no Google Maps
             </a>
           </div>
         </div>
