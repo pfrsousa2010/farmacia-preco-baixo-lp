@@ -6,6 +6,7 @@ import Footer from "./components/Footer"
 import Header from "./components/Header"
 import Hero from "./components/Hero"
 import Hours from "./components/Hours"
+import Payment from "./components/Payment"
 import Products from "./components/Products"
 
 export default function App() {
@@ -16,6 +17,7 @@ export default function App() {
         <Hero />
         <Benefits />
         <Delivery />
+        <Payment />
         <Products />
         <Hours />
         <Contact />

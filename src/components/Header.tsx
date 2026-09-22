@@ -6,6 +6,7 @@ import WhatsAppButton from "./WhatsAppButton"
 const links = [
   { href: "#vantagens", label: "Vantagens" },
   { href: "#delivery", label: "Delivery" },
+  { href: "#pagamento", label: "Pagamento" },
   { href: "#produtos", label: "Produtos" },
   { href: "#horarios", label: "Horários" },
   { href: "#contato", label: "Contato" },
