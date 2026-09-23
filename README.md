@@ -54,6 +54,15 @@ bloco `FAQPage` em [`index.html`](index.html) (dados estruturados, para o
 Google poder mostrar as perguntas direto na busca). Ao editar uma pergunta,
 edite a outra também.
 
+## SEO técnico
+
+`public/robots.txt` libera a indexação e aponta para `public/sitemap.xml`
+(com a única página do site). Isso só ajuda o Google a rastrear o site —
+não coloca o site nos resultados de busca por si só. Isso depende de
+submeter o site no Google Search Console e, principalmente para buscas
+locais como "farmácia perto de mim", de ter um Perfil da Empresa no Google
+configurado e verificado, linkando para este domínio.
+
 ## Domínio
 
 O site usa **precobaixofarmacias.com.br**. A URL canônica, as tags Open Graph
