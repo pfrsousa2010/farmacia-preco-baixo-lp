@@ -60,6 +60,14 @@ O [`netlify.toml`](netlify.toml) já traz a configuração: build com `npm run b
 publicação da pasta `dist` e Node 22. Basta conectar o repositório na Netlify —
 não é preciso preencher nada manualmente.
 
+## Endereço
+
+O endereço exibido em texto e o ponto do mapa são independentes por design:
+`site.address.street` (em `src/data/site.ts`) alimenta todo o texto visível,
+enquanto `site.address.coords` fixa o marcador e o link "Como chegar" (que usa
+as coordenadas, não o texto). Trocar a rua não move o pino — é preciso editar
+`coords` separadamente quando for o caso.
+
 ## Mapa
 
 O mapa usa [Leaflet](https://leafletjs.com) com os tiles padrão do

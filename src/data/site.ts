@@ -9,7 +9,7 @@ export const site = {
     e164: "5591988423220",
   },
   address: {
-    street: "R. Vinte e Nove de Dezembro, 89",
+    street: "Av. Joaquim Pereira de Queiroz, 1330",
     city: "Benevides",
     state: "PA",
     zip: "68795-000",
@@ -38,15 +38,16 @@ export function whatsappLink(message: string) {
 
 export const fullAddress = `${site.address.street} — ${site.address.city}, ${site.address.state}, ${site.address.zip}`
 
-const mapsQuery = encodeURIComponent(
-  `Farmácia Preço Baixo, ${site.address.street}, ${site.address.city} - ${site.address.state}, ${site.address.zip}`,
-)
-
 /**
  * Universal Google Maps URL: opens the Maps app when it is installed and falls
  * back to the browser otherwise — on any platform, with no app-specific scheme.
+ *
+ * Aponta para as coordenadas (site.address.coords), não para o texto do
+ * endereço: assim "Como chegar" sempre leva ao ponto marcado no mapa, mesmo
+ * que o texto do endereço mude e ainda não tenha sido conferido no local.
  */
-export const mapsLink = `https://www.google.com/maps/search/?api=1&query=${mapsQuery}`
+const { lat, lng } = site.address.coords
+export const mapsLink = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`
 
 
 export const defaultMessage =
