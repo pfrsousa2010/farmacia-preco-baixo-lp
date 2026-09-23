@@ -54,6 +54,12 @@ bloco `FAQPage` em [`index.html`](index.html) (dados estruturados, para o
 Google poder mostrar as perguntas direto na busca). Ao editar uma pergunta,
 edite a outra também.
 
+## Domínio
+
+O site usa **precobaixofarmacias.com.br**. A URL canônica, as tags Open Graph
+(og:url, og:image) e a URL do schema Pharmacy em [`index.html`](index.html)
+já apontam para ele — atualize os três se o domínio mudar de novo.
+
 ## Deploy (Netlify)
 
 O [`netlify.toml`](netlify.toml) já traz a configuração: build com `npm run build`,
